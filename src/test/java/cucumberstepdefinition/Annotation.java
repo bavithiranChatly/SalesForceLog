@@ -28,6 +28,7 @@ public class Annotation {
 		//driver.navigate().to("https://www.facebook.com/");
 		driver.get("https://mc.s10.exacttarget.com/");
 		TimeUnit.SECONDS.sleep(5);
+		driver.manage().window().maximize();
 		
 	}
 
@@ -64,6 +65,25 @@ public class Annotation {
 		
 		
 		
+	}
+	
+	@Then("^Click Business Unit Main$")
+	public void Click_Business_Unit_Main() throws InterruptedException
+	{
+		WebElement Main_BU = driver.findElement(By.xpath("//*[@id=\"body\"]/div/div[1]/div/div[1]/nav[2]/div[2]/div/div[1]/div/span[1]"));
+		Main_BU.click();
+		System.out.println("BU Main");
+		TimeUnit.SECONDS.sleep(1);
+		
+	}
+	
+	@Then("^Click Particular Business Unit$")
+	public void Click_Particular_Business_Unit() throws InterruptedException
+	{
+		WebElement Main_Par = driver.findElement(By.xpath("//*[@id=\"mc-accounts-option-515005096\"]/div[1]"));
+		Main_Par.click();
+		System.out.println("Click Login button");
+		TimeUnit.SECONDS.sleep(10);
 	}
 	
 	@Then("^Brower Quit action$")

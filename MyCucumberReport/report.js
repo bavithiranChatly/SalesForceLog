@@ -105,6 +105,16 @@ formatter.step({
 });
 formatter.step({
   "line": 25,
+  "name": "Click Business Unit Main",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "Click Particular Business Unit",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
   "name": "Brower Quit action",
   "keyword": "Then "
 });
@@ -112,28 +122,42 @@ formatter.match({
   "location": "Annotation.openBrowser()"
 });
 formatter.result({
-  "duration": 7261787200,
+  "duration": 5933913700,
   "status": "passed"
 });
 formatter.match({
   "location": "Annotation.goToFacebook()"
 });
 formatter.result({
-  "duration": 14938643700,
+  "duration": 15884894900,
   "status": "passed"
 });
 formatter.match({
   "location": "Annotation.loginButton()"
 });
 formatter.result({
-  "duration": 29464158700,
+  "duration": 27144936000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Annotation.Click_Business_Unit_Main()"
+});
+formatter.result({
+  "duration": 1089646300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Annotation.Click_Particular_Business_Unit()"
+});
+formatter.result({
+  "duration": 10184169500,
   "status": "passed"
 });
 formatter.match({
   "location": "Annotation.Brower_Quit_action()"
 });
 formatter.result({
-  "duration": 345707800,
+  "duration": 303595100,
   "status": "passed"
 });
 });

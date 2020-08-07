@@ -22,4 +22,6 @@ Feature: CucumberJava
     Given I have open the browser
     When I open newstuck website
     Then Login button should exits
+    Then Click Business Unit Main
+    Then Click Particular Business Unit 
     Then Brower Quit action
